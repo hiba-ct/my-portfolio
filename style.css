@@ -1,0 +1,162 @@
+*{
+    font-family: "Noto Sans", sans-serif;
+}
+
+:root {
+    --purple: rgb(149, 9, 137);
+}
+/* .main{
+    background-color: whitesmoke;
+} */
+body{
+    overflow-x: hidden;
+}
+
+
+
+
+/* navbar section*/
+#myNavBar{
+    position: fixed;
+}
+
+
+
+
+/* home section */
+#home{
+    padding-top: 100px;
+}
+#home h1{
+    font-size: 50px;
+    font-weight: 600;
+}
+ h2{
+    font-size: 35px;
+    font-weight: 600;
+}
+#home p{
+    font-size: 17px;
+    font-weight: 500;
+}
+.btn{
+    background-image: linear-gradient(to right, rgb(237, 138, 228), rgb(149, 9, 137));
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 17px;
+    font-weight: 600;
+    display: inline-block;
+}
+
+
+.profile-wrapper {
+    position: relative;
+    width: 260px;
+    height: 260px;
+}
+
+.white_bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    z-index: 1;
+    animation: morph 8s ease-in-out infinite;
+    transition: all 1s ease-in-out;
+    object-fit: cover;
+    filter: brightness(1.1);
+}
+
+.profile_picture {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    z-index: 2;
+    border: 5px solid white;
+    background-color: red;
+}
+@keyframes morph {
+    0%, 100% {
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    }
+    50% {
+        border-radius: 40% 60% 70% 30% / 50% 60% 30% 60%;
+    }
+}
+
+/* Skills and Technologies */
+#skills{
+    padding-top: 100px;
+}
+.skill{ /*to vertically align the text */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%; /* Ensures the container takes the full height */
+    transition: transform 0.4s ease;
+
+}
+.skill:hover{
+    transform: scale(1.5) ;
+}
+
+
+
+
+
+/* project section */
+#project{
+    padding-top: 100px;
+}
+.card{
+    transition: transform 0.4s ease;
+}
+.card:hover{
+    transform: scale(1.1);
+}
+
+
+.row.d-flex {
+    gap: 50px; /* Adds spacing between cards */
+}
+
+@media (max-width: 768px) { /* sm breakpoint */
+    .col-sm-6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+
+
+/* Contact Section */
+#contact{
+    padding-top: 100px;
+}
+.icon{
+    color: var(--purple);
+}
+
+
+
+
+
+/* Footer */
+.footer{
+    background-color: var(--purple);
+    color: white;
+}
+#link a{
+    text-decoration: none;
+    color: white;
+}
+
+
+
