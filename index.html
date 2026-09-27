@@ -1,493 +1,2383 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Semeena Hiba C — MERN Stack Developer</title>
-  <meta name="description" content="Semeena Hiba C — MERN Stack Developer specializing in React, Node.js, Express, MongoDB, and MySQL. View projects, skills, and contact details." />
-  <link rel="preconnect" href="[fonts.gstatic.com](https://fonts.gstatic.com)" crossorigin>
-  <link href="[fonts.googleapis.com](https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&display=swap)" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="favicon.ico" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Semeena Hiba C | ReactJS Frontend Developer</title>
+
+  <meta
+    name="description"
+    content="Semeena Hiba C - ReactJS Frontend Developer specializing in React, JavaScript, Node.js, Express, MongoDB and MySQL."
+  >
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  >
+
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <!-- Header / Nav -->
+
+  <!-- ================= HEADER ================= -->
+
   <header class="site-header" id="top">
-    <nav class="navbar container" id="myNavBar" aria-label="Primary">
-      <a href="#top" class="brand" aria-label="Home">
+
+    <nav class="navbar container">
+
+      <a href="#home" class="brand">
         <span class="brand-mark">H</span>
         <span class="brand-text">Hiba C</span>
       </a>
 
-      <button class="nav-toggle" aria-expanded="false" aria-controls="navMenu" aria-label="Toggle menu">
-        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
-      </button>
+      <div class="nav-right">
 
-      <ul class="nav-menu" id="navMenu">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#certifications">Certifications</a></li>
-        <li><a href="#contact" class="btn btn-small">Contact</a></li>
-      </ul>
+        <ul class="nav-menu" id="navMenu">
+
+          <li>
+            <a href="#home" class="nav-link active">Home</a>
+          </li>
+
+          <li>
+            <a href="#skills" class="nav-link">Skills</a>
+          </li>
+
+          <li>
+            <a href="#projects" class="nav-link">Projects</a>
+          </li>
+
+          <li>
+            <a href="#experience" class="nav-link">Experience</a>
+          </li>
+
+          <li>
+            <a href="#education" class="nav-link">Education</a>
+          </li>
+
+          <li>
+            <a href="#certifications" class="nav-link">Certifications</a>
+          </li>
+
+          <li>
+            <a href="#contact" class="nav-link contact-link">
+              Contact
+            </a>
+          </li>
+
+        </ul>
+
+        <!-- Dark Mode -->
+
+        <button
+          class="theme-btn"
+          id="themeBtn"
+          aria-label="Toggle dark mode"
+        >
+          <i class="fa-solid fa-moon"></i>
+        </button>
+
+        <!-- Mobile menu -->
+
+        <button
+          class="nav-toggle"
+          id="navToggle"
+          aria-label="Toggle navigation"
+          aria-expanded="false"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+      </div>
+
     </nav>
+
   </header>
 
-  <!-- Hero -->
+
+  <!-- ================= MAIN ================= -->
+
   <main>
-    <section id="home" class="section hero">
+
+
+    <!-- ================= HERO ================= -->
+
+    <section id="home" class="hero section">
+
       <div class="container hero-grid">
-        <div class="hero-text">
-          <p class="eyebrow">MERN Stack Developer</p>
-          <h1>Hi, I'm <span class="accent">Semeena Hiba C</span></h1>
-          <p class="lead">
-            I build scalable web apps with React, Node.js, Express, MongoDB, and MySQL.
-            Comfortable with REST APIs, JWT auth, MVC architecture, and modern UI frameworks.
-            Currently learning Generative AI and AI-powered app development.
+
+        <div class="hero-text reveal">
+
+          <p class="eyebrow">
+            <span id="typing-text"></span>
           </p>
-          <div class="cta">
-            <a class="btn" href="https://drive.google.com/file/d/1xELL30FJj0oR3f6QSJHtHGkaCJdaabgw/view" target="_blank" rel="noopener">Download CV</a>
-            <a class="btn btn-ghost" href="#projects">View Projects</a>
+
+          <h1>
+            Hi, I'm
+            <span class="gradient-text">
+              Semeena Hiba C
+            </span>
+          </h1>
+
+          <p class="hero-description">
+
+            I build responsive and user-friendly web applications
+            using React.js, JavaScript, Node.js, Express.js,
+            MongoDB and MySQL.
+
+            I enjoy solving problems, building practical projects
+            and learning AI-assisted development.
+
+          </p>
+
+
+          <div class="hero-buttons">
+
+            <a
+              href="https://drive.google.com/file/d/1xELL30FJj0oR3f6QSJHtHGkaCJdaabgw/view"
+              target="_blank"
+              rel="noopener"
+              class="btn primary-btn"
+            >
+              <i class="fa-solid fa-file-arrow-down"></i>
+              Download CV
+            </a>
+
+            <a
+              href="#projects"
+              class="btn secondary-btn"
+            >
+              <i class="fa-solid fa-code"></i>
+              View Projects
+            </a>
+
           </div>
-          <ul class="quick-links">
-            <li><a href="https://www.linkedin.com/in/hibact" target="_blank" rel="noopener">LinkedIn</a></li>
-            <li><a href="https://github.com/hiba-ct" target="_blank" rel="noopener">GitHub</a></li>
-            <li><a href="https://hiba-ct.github.io/my-portfolio" target="_blank" rel="noopener">Portfolio</a></li>
-          </ul>
+
+
+          <div class="social-links">
+
+            <a
+              href="www.linkedin.com/in/hibact"
+              target="_blank"
+              rel="noopener"
+              aria-label="LinkedIn"
+            >
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+
+            <a
+              href="https://github.com/hiba-ct"
+              target="_blank"
+              rel="noopener"
+              aria-label="GitHub"
+            >
+              <i class="fa-brands fa-github"></i>
+            </a>
+
+            <a
+              href="mailto:semeenahiba@gmail.com"
+              aria-label="Email"
+            >
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+
+          </div>
+
         </div>
 
-        <div class="hero-visual">
-          <div class="profile-wrapper" aria-hidden="true">
-            <img class="white_bg" src="blob.svg" alt="" />
-            <img class="profile_picture" src="./images/my_pic3.png" alt="Portrait of Semeena Hiba C" />
+
+        <!-- Hero Image -->
+
+        <div class="hero-visual reveal">
+
+          <div class="profile-card">
+
+            <div class="profile-glow"></div>
+
+            <img
+              src="./images/my_pic3.png"
+              alt="Semeena Hiba C"
+              class="profile-image"
+            >
+
           </div>
+
+          <div class="floating-card card-one">
+            <i class="fa-brands fa-react"></i>
+            React
+          </div>
+
+          <div class="floating-card card-two">
+            <i class="fa-brands fa-node-js"></i>
+            Node.js
+          </div>
+
         </div>
+
       </div>
+
     </section>
 
-    <!-- Skills -->
-    <section id="skills" class="section">
+
+
+    <!-- ================= ABOUT ================= -->
+
+    <section class="about section">
+
       <div class="container">
-        <h2>Skills</h2>
-        <p class="section-intro">End-to-end web development with a focus on clean UX, secure APIs, and reliable data.</p>
+
+        <div class="section-heading reveal">
+
+          <span>ABOUT ME</span>
+
+          <h2>
+            Building ideas into
+            <span>web applications</span>
+          </h2>
+
+          <p>
+            I am a ReactJS Frontend Developer with hands-on
+            experience building responsive web applications,
+            integrating REST APIs and working with MERN stack
+            technologies.
+          </p>
+
+        </div>
+
+
+        <div class="stats-grid">
+
+          <div class="stat-card reveal">
+
+            <i class="fa-solid fa-code"></i>
+
+            <h3 class="counter" data-target="10">
+              0
+            </h3>
+
+            <p>
+              Projects
+            </p>
+
+          </div>
+
+
+          <div class="stat-card reveal">
+
+            <i class="fa-solid fa-laptop-code"></i>
+
+            <h3 class="counter" data-target="2">
+              0
+            </h3>
+
+            <p>
+              Development Roles
+            </p>
+
+          </div>
+
+
+          <div class="stat-card reveal">
+
+            <i class="fa-solid fa-layer-group"></i>
+
+            <h3 class="counter" data-target="8">
+              0
+            </h3>
+
+            <p>
+              Technologies
+            </p>
+
+          </div>
+
+
+          <div class="stat-card reveal">
+
+            <i class="fa-solid fa-brain"></i>
+
+            <h3 class="counter" data-target="3">
+              0
+            </h3>
+
+            <p>
+              AI Skills
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- ================= SKILLS ================= -->
+
+    <section id="skills" class="section">
+
+      <div class="container">
+
+        <div class="section-heading reveal">
+
+          <span>MY SKILLS</span>
+
+          <h2>
+            Technologies I
+            <span>work with</span>
+          </h2>
+
+          <p>
+            End-to-end web development with a focus on clean
+            UI, responsive design, APIs and reliable data.
+          </p>
+
+        </div>
+
 
         <div class="skills-grid">
-          <div class="skill">
+
+
+          <div class="skill-card reveal">
+
+            <div class="skill-icon">
+              <i class="fa-solid fa-laptop-code"></i>
+            </div>
+
             <h3>Frontend</h3>
-            <ul>
-              <li>HTML5, CSS3, JavaScript</li>
-              <li>React.js</li>
-              <li>Bootstrap, Tailwind CSS</li>
-              <li>Responsive UI, Accessibility</li>
-            </ul>
+
+            <p>
+              HTML5, CSS3, JavaScript, React.js,
+              Bootstrap, Tailwind CSS
+            </p>
+
+            <div class="skill-tags">
+
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+              <span>React</span>
+
+            </div>
+
           </div>
-          <div class="skill">
+
+
+          <div class="skill-card reveal">
+
+            <div class="skill-icon">
+              <i class="fa-solid fa-server"></i>
+            </div>
+
             <h3>Backend</h3>
-            <ul>
-              <li>Node.js, Express.js</li>
-              <li>REST APIs, JWT Authentication</li>
-              <li>MVC Architecture</li>
-            </ul>
+
+            <p>
+              Node.js, Express.js, REST APIs,
+              JWT Authentication and MVC.
+            </p>
+
+            <div class="skill-tags">
+
+              <span>Node</span>
+              <span>Express</span>
+              <span>REST API</span>
+              <span>JWT</span>
+
+            </div>
+
           </div>
-          <div class="skill">
-            <h3>Databases</h3>
-            <ul>
-              <li>MongoDB</li>
-              <li>MySQL</li>
-            </ul>
+
+
+          <div class="skill-card reveal">
+
+            <div class="skill-icon">
+              <i class="fa-solid fa-database"></i>
+            </div>
+
+            <h3>Database</h3>
+
+            <p>
+              Experience working with NoSQL and
+              relational databases.
+            </p>
+
+            <div class="skill-tags">
+
+              <span>MongoDB</span>
+              <span>MySQL</span>
+              <span>Mongoose</span>
+
+            </div>
+
           </div>
-          <div class="skill">
-            <h3>Tools & AI</h3>
-            <ul>
-              <li>Git, GitHub, Postman, VS Code</li>
-              <li>Generative AI, Prompt Engineering</li>
-              <li>OpenAI Fundamentals, Gemini AI</li>
-            </ul>
+
+
+          <div class="skill-card reveal">
+
+            <div class="skill-icon">
+              <i class="fa-solid fa-robot"></i>
+            </div>
+
+            <h3>AI & Tools</h3>
+
+            <p>
+              Generative AI, Prompt Engineering,
+              Git, GitHub, Postman and VS Code.
+            </p>
+
+            <div class="skill-tags">
+
+              <span>Generative AI</span>
+              <span>Git</span>
+              <span>GitHub</span>
+
+            </div>
+
           </div>
+
+
         </div>
+
       </div>
+
     </section>
 
-    <!-- Projects -->
-    <section id="projects" class="section alt">
+
+
+    <!-- ================= PROJECTS ================= -->
+
+    <section id="projects" class="section projects-section">
+
       <div class="container">
-        <h2>Projects</h2>
-        <p class="section-intro">Selected work. Each card links to a live demo and repo links available on GitHub.</p>
+
+        <div class="section-heading reveal">
+
+          <span>MY WORK</span>
+
+          <h2>
+            Featured
+            <span>Projects</span>
+          </h2>
+
+          <p>
+            Some of my development projects using React,
+            JavaScript and MERN technologies.
+          </p>
+
+        </div>
+
+
+        <!-- Filter buttons -->
+
+        <div class="project-filters">
+
+          <button
+            class="filter-btn active"
+            data-filter="all"
+          >
+            All
+          </button>
+
+          <button
+            class="filter-btn"
+            data-filter="react"
+          >
+            React
+          </button>
+
+          <button
+            class="filter-btn"
+            data-filter="javascript"
+          >
+            JavaScript
+          </button>
+
+          <button
+            class="filter-btn"
+            data-filter="mern"
+          >
+            MERN
+          </button>
+
+        </div>
+
 
         <div class="projects-grid">
+
+
           <!-- Eduversity -->
-          <article class="card project">
-            <div class="card-media">
-              <img src="./images/learning1.png" alt="Eduversity — learning platform interface" loading="lazy">
-            </div>
-            <div class="card-body">
-              <h3>Eduversity — MERN Learning Platform</h3>
-              <p>Full-stack platform with course management, student enrollment, teacher admin, and dashboards.</p>
-              <ul class="tags">
-                <li>React</li><li>Node</li><li>Express</li><li>MongoDB</li><li>JWT</li>
-              </ul>
-              <div class="card-actions">
-                <a class="btn btn-small" href="https://learning-frontend-sand.vercel.app/" target="_blank" rel="noopener">Live</a>
-                <a class="btn btn-ghost btn-small" href="https://github.com/hiba-ct/Learning-frontend" target="_blank" rel="noopener">Repo</a>
+
+          <article
+            class="project-card reveal"
+            data-category="mern react"
+          >
+
+            <div class="project-image">
+
+              <img
+                src="./images/learning1.png"
+                alt="Eduversity Learning Platform"
+                loading="lazy"
+              >
+
+              <div class="project-overlay">
+
+                <a
+                  href="https://learning-frontend-sand.vercel.app/"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+
               </div>
+
             </div>
+
+            <div class="project-body">
+
+              <span class="project-number">
+                01
+              </span>
+
+              <h3>
+                Eduversity — MERN Learning Platform
+              </h3>
+
+              <p>
+                Full-stack learning platform with course
+                management, enrollment and dashboards.
+              </p>
+
+              <div class="project-tags">
+
+                <span>React</span>
+                <span>Node</span>
+                <span>MongoDB</span>
+                <span>JWT</span>
+
+              </div>
+
+              <div class="project-buttons">
+
+                <a
+                  href="https://learning-frontend-sand.vercel.app/"
+                  target="_blank"
+                  rel="noopener"
+                  class="small-btn"
+                >
+                  Live Demo
+                </a>
+
+                <a
+                  href="https://github.com/hiba-ct/Learning-frontend"
+                  target="_blank"
+                  rel="noopener"
+                  class="small-btn outline"
+                >
+                  GitHub
+                </a>
+
+              </div>
+
+            </div>
+
           </article>
 
-         
-          <!-- Calculator -->
-          <article class="card project">
-            <div class="card-media">
-              <img src="./images/calculator1.png" alt="Calculator UI" loading="lazy">
+
+
+          <!-- Todo -->
+
+          <article
+            class="project-card reveal"
+            data-category="mern react"
+          >
+
+            <div class="project-image">
+
+              <img
+                src="./images/todo1.png"
+                alt="Todo Application"
+                loading="lazy"
+              >
+
             </div>
-            <div class="card-body">
-              <h3>Calculator</h3>
-              <p>Simple, responsive calculator built with HTML, CSS, and JavaScript.</p>
-              <ul class="tags">
-                <li>HTML</li><li>CSS</li><li>JavaScript</li>
-              </ul>
-              <div class="card-actions">
-                <a class="btn btn-small" href="https://hiba-ct.github.io/calculator" target="_blank" rel="noopener">Live</a>
-                <a class="btn btn-ghost btn-small" href="https://github.com/hiba-ct/calculator" target="_blank" rel="noopener">Repo</a>
+
+            <div class="project-body">
+
+              <span class="project-number">
+                02
+              </span>
+
+              <h3>
+                Full Stack Todo Application
+              </h3>
+
+              <p>
+                Task manager with authentication and
+                user-specific access.
+              </p>
+
+              <div class="project-tags">
+
+                <span>React</span>
+                <span>Node</span>
+                <span>MySQL</span>
+                <span>JWT</span>
+
               </div>
+
+              <div class="project-buttons">
+
+                <a
+                  href="https://todo-frontend-chi-sepia.vercel.app"
+                  target="_blank"
+                  rel="noopener"
+                  class="small-btn"
+                >
+                  Live Demo
+                </a>
+
+                <a
+                  href="https://github.com/hiba-ct/todo_frontend"
+                  target="_blank"
+                  rel="noopener"
+                  class="small-btn outline"
+                >
+                  GitHub
+                </a>
+
+              </div>
+
             </div>
+
           </article>
+
+
+
+          <!-- Project Fair -->
+
+          <article
+            class="project-card reveal"
+            data-category="mern react"
+          >
+
+            <div class="project-image">
+
+              <img
+                src="./images/projectfair1.png"
+                alt="Project Fair"
+                loading="lazy"
+              >
+
+            </div>
+
+            <div class="project-body">
+
+              <span class="project-number">
+                03
+              </span>
+
+              <h3>
+                Project Fair
+              </h3>
+
+              <p>
+                MERN application with user authentication
+                and project management.
+              </p>
+
+              <div class="project-tags">
+
+                <span>MERN</span>
+                <span>React</span>
+                <span>Auth</span>
+
+              </div>
+
+              <div class="project-buttons">
+
+                <a
+                  href="https://projectfair-dist.vercel.app"
+                  target="_blank"
+                  rel="noopener"
+                  class="small-btn"
+                >
+                  Live Demo
+                </a>
+
+                <a
+                  href="https://github.com/hiba-ct/projectfair-frontend"
+                  target="_blank"
+                  rel="noopener"
+                  class="small-btn outline"
+                >
+                  GitHub
+                </a>
+
+              </div>
+
+            </div>
+
+          </article>
+
+
+
+          <!-- E-Kart -->
+
+          <article
+            class="project-card reveal"
+            data-category="javascript"
+          >
+
+            <div class="project-image">
+
+              <img
+                src="./images/e-kart1.png"
+                alt="E-Kart"
+                loading="lazy"
+              >
+
+            </div>
+
+            <div class="project-body">
+
+              <span class="project-number">
+                04
+              </span>
+
+              <h3>
+                E-Kart
+              </h3>
+
+              <p>
+                E-commerce application for online shopping
+                with responsive UI.
+              </p>
+
+              <div class="project-tags">
+
+                <span>JavaScript</span>
+                <span>Tailwind</span>
+
+              </div>
+
+              <div class="project-buttons">
+
+                <a
+                  href="https://ekart-dist.vercel.app/"
+                  target="_blank"
+                  rel="noopener"
+                  class="small-btn"
+                >
+                  Live Demo
+                </a>
+
+                <a
+                  href="https://github.com/hiba-ct/E-Cart"
+                  target="_blank"
+                  rel="noopener"
+                  class="small-btn outline"
+                >
+                  GitHub
+                </a>
+
+              </div>
+
+            </div>
+
+          </article>
+
+
+
+          <!-- Calculator -->
+
+          <article
+            class="project-card reveal"
+            data-category="javascript"
+          >
+
+            <div class="project-image">
+
+              <img
+                src="./images/calculator1.png"
+                alt="Calculator"
+                loading="lazy"
+              >
+
+            </div>
+
+            <div class="project-body">
+
+              <span class="project-number">
+                05
+              </span>
+
+              <h3>
+                Calculator
+              </h3>
+
+              <p>
+                Simple responsive calculator using
+                HTML, CSS and JavaScript.
+              </p>
+
+              <div class="project-tags">
+
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+
+              </div>
+
+              <div class="project-buttons">
+
+                <a
+                  href="https://hiba-ct.github.io/calculator"
+                  target="_blank"
+                  rel="noopener"
+                  class="small-btn"
+                >
+                  Live Demo
+                </a>
+
+                <a
+                  href="https://github.com/hiba-ct/calculator"
+                  target="_blank"
+                  rel="noopener"
+                  class="small-btn outline"
+                >
+                  GitHub
+                </a>
+
+              </div>
+
+            </div>
+
+          </article>
+
+
 
           <!-- Travel -->
-          <article class="card project">
-            <div class="card-media">
-              <img src="./images/travel1.png" alt="Responsive travel website hero" loading="lazy">
+
+          <article
+            class="project-card reveal"
+            data-category="javascript"
+          >
+
+            <div class="project-image">
+
+              <img
+                src="./images/travel1.png"
+                alt="Travel Website"
+                loading="lazy"
+              >
+
             </div>
-            <div class="card-body">
-              <h3>Responsive Travel Website</h3>
-              <p>Landing page with responsive layout and modern components.</p>
-              <ul class="tags">
-                <li>HTML</li><li>CSS</li>
-              </ul>
-              <div class="card-actions">
-                <a class="btn btn-small" href="https://hiba-ct.github.io/travel-app" target="_blank" rel="noopener">Live</a>
-                <a class="btn btn-ghost btn-small" href="https://github.com/hiba-ct/travel-app" target="_blank" rel="noopener">Repo</a>
+
+            <div class="project-body">
+
+              <span class="project-number">
+                06
+              </span>
+
+              <h3>
+                Responsive Travel Website
+              </h3>
+
+              <p>
+                Responsive travel landing page with
+                modern UI components.
+              </p>
+
+              <div class="project-tags">
+
+                <span>HTML</span>
+                <span>CSS</span>
+
               </div>
+
+              <div class="project-buttons">
+
+                <a
+                  href="https://hiba-ct.github.io/travel-app"
+                  target="_blank"
+                  rel="noopener"
+                  class="small-btn"
+                >
+                  Live Demo
+                </a>
+
+                <a
+                  href="https://github.com/hiba-ct/travel-app"
+                  target="_blank"
+                  rel="noopener"
+                  class="small-btn outline"
+                >
+                  GitHub
+                </a>
+
+              </div>
+
             </div>
+
           </article>
+
+
 
           <!-- Plants -->
-          <article class="card project">
-            <div class="card-media">
-              <img src="./images/plants1.png" alt="Plants website gallery" loading="lazy">
+
+          <article
+            class="project-card reveal"
+            data-category="javascript"
+          >
+
+            <div class="project-image">
+
+              <img
+                src="./images/plants1.png"
+                alt="Plants Website"
+                loading="lazy"
+              >
+
             </div>
-            <div class="card-body">
-              <h3>Responsive Plants Website</h3>
-              <p>Clean product gallery and sections optimized for mobile-first.</p>
-              <ul class="tags">
-                <li>HTML</li><li>CSS</li>
-              </ul>
-              <div class="card-actions">
-                <a class="btn btn-small" href="https://plants-tawny.vercel.app/" target="_blank" rel="noopener">Live</a>
-                <a class="btn btn-ghost btn-small" href="https://github.com/hiba-ct/plants-" target="_blank" rel="noopener">Repo</a>
+
+            <div class="project-body">
+
+              <span class="project-number">
+                07
+              </span>
+
+              <h3>
+                Responsive Plants Website
+              </h3>
+
+              <p>
+                Product gallery with mobile-first
+                responsive design.
+              </p>
+
+              <div class="project-tags">
+
+                <span>HTML</span>
+                <span>CSS</span>
+
               </div>
+
+              <div class="project-buttons">
+
+                <a
+                  href="https://plants-tawny.vercel.app/"
+                  target="_blank"
+                  rel="noopener"
+                  class="small-btn"
+                >
+                  Live Demo
+                </a>
+
+                <a
+                  href="https://github.com/hiba-ct/plants-"
+                  target="_blank"
+                  rel="noopener"
+                  class="small-btn outline"
+                >
+                  GitHub
+                </a>
+
+              </div>
+
             </div>
+
           </article>
 
-          <!-- Furniture -->
-          <article class="card project">
-            <div class="card-media">
-              <img src="./images/furniture1.png" alt="Furniture site layout" loading="lazy">
-            </div>
-            <div class="card-body">
-              <h3>Furniture — Responsive CSS Website</h3>
-              <p>Minimal, fast-loading landing page with semantic HTML.</p>
-              <ul class="tags">
-                <li>HTML</li><li>CSS</li>
-              </ul>
-              <div class="card-actions">
-                <a class="btn btn-small" href="https://hiba-ct.github.io/furniture" target="_blank" rel="noopener">Live</a>
-                <a class="btn btn-ghost btn-small" href="https://github.com/hiba-ct/furniture" target="_blank" rel="noopener">Repo</a>
-              </div>
-            </div>
-          </article>
+
 
           <!-- Weather -->
-          <article class="card project">
-            <div class="card-media">
-              <img src="./images/whether1.png" alt="Weather app screenshot" loading="lazy">
-            </div>
-            <div class="card-body">
-              <h3>Weather App</h3>
-              <p>Weather lookup with responsive UI.</p>
-              <ul class="tags">
-                <li>HTML</li><li>CSS</li><li>JavaScript</li>
-              </ul>
-              <div class="card-actions">
-                <a class="btn btn-small" href="https://hiba-ct.github.io/whether" target="_blank" rel="noopener">Live</a>
-                <a class="btn btn-ghost btn-small" href="https://github.com/hiba-ct/whether" target="_blank" rel="noopener">Repo</a>
-              </div>
-            </div>
-          </article>
 
-           <!-- Full Stack Todo -->
-          <article class="card project">
-            <div class="card-media">
-              <img src="./images/todo1.png" alt="Todo app — tasks list and auth" loading="lazy">
-            </div>
-            <div class="card-body">
-              <h3>Full Stack Todo Application</h3>
-              <p>Task manager with JWT auth and user-specific access using React, Node, Express, and MySQL.</p>
-              <ul class="tags">
-                <li>React</li><li>Node</li><li>Express</li><li>MySQL</li><li>JWT</li>
-              </ul>
-              <div class="card-actions">
-                <a class="btn btn-small" href="https://todo-frontend-chi-sepia.vercel.app" target="_blank" rel="noopener">Live</a>
-                <a class="btn btn-ghost btn-small" href="https://github.com/hiba-ct/todo_frontend" target="_blank" rel="noopener">Repo</a>
-              </div>
-            </div>
-          </article>
+          <article
+            class="project-card reveal"
+            data-category="javascript"
+          >
 
+            <div class="project-image">
 
-          <!-- Learning / Media / Interest / Color Changer -->
-          <article class="card project">
-              <div class="card-media">
-              <img src="./images/projectfair1.png" alt="Weather app screenshot" loading="lazy">
-            </div>
-            <div class="card-body">
-              <h3>Project Fair (MERN)</h3>
-              <p>Project Fair app with user authentication and project management.</p>
-              <ul class="tags">
-                <li>MERN</li><li>Auth</li>
-              </ul>
-              <div class="card-actions">
-                <a class="btn btn-small" href="https://projectfair-dist.vercel.app" target="_blank" rel="noopener">Live</a>
-                <a class="btn btn-ghost btn-small" href="https://github.com/hiba-ct/projectfair-frontend" target="_blank" rel="noopener">Repo</a>
-                
-              </div>
-            </div>
-          </article>
+              <img
+                src="./images/whether1.png"
+                alt="Weather App"
+                loading="lazy"
+              >
 
-          <article class="card project">
-              <div class="card-media">
-              <img src="./images/iterest1.png" alt="Weather app screenshot" loading="lazy">
             </div>
-            <div class="card-body">
-              <h3>Simple Interest Calculator</h3>
-              <p>Compute simple interest with instant results.</p>
-              <ul class="tags">
-                <li>React</li>
-              </ul>
-              <div class="card-actions">
-                <a class="btn btn-small" href="https://interest-calculator-neon.vercel.app" target="_blank" rel="noopener">Live</a>
-                <a class="btn btn-ghost btn-small" href="https://github.com/hiba-ct/interest-calculator" target="_blank" rel="noopener">Repo</a>
-              </div>
-            </div>
-          </article>
 
-          <article class="card project">
-              <div class="card-media">
-              <img src="./images/media1.png" alt="Weather app screenshot" loading="lazy">
-            </div>
-            <div class="card-body">
-              <h3>Media Player</h3>
-              <p>media controls demo.</p>
-              <ul class="tags">
-                 <li>React</li>
-                <li>JSON</li>
-              </ul>
-              <div class="card-actions">
-                <a class="btn btn-small" href="https://media-frontend-puce.vercel.app/" target="_blank" rel="noopener">Live</a>
-                <a class="btn btn-ghost btn-small" href="https://github.com/hiba-ct/media-frontend" target="_blank" rel="noopener">Repo</a>
-                
-              </div>
-            </div>
-          </article>
+            <div class="project-body">
 
-           <article class="card project">
-              <div class="card-media">
-              <img src="./images/colorchanger1.png" alt="Weather app screenshot" loading="lazy">
-            </div>
-            <div class="card-body">
-              <h3>Color Changer</h3>
-              <p>Color changer app.</p>
-              <ul class="tags">
-                <li>JavaScript</li>
-              </ul>
-              <div class="card-actions">
-                <a class="btn btn-small" href="https://colorchangerapp.vercel.app" target="_blank" rel="noopener">Live</a>
-                <a class="btn btn-ghost btn-small" href="https://github.com/hiba-ct/colorchanger" target="_blank" rel="noopener">Repo</a>
-              </div>
-            </div>
-          </article>
+              <span class="project-number">
+                08
+              </span>
 
-          <article class="card project">
-              <div class="card-media">
-              <img src="./images/e-kart1.png" alt="Weather app screenshot" loading="lazy">
-            </div>
-            <div class="card-body">
-              <h3>E-Kart</h3>
-              <p>E-commerce app for online shopping.</p>
-              <ul class="tags">
-                <li>JavaScript</li>
-                  <li>Tailwind CSS</li>
-              </ul>
-              <div class="card-actions">
-                <a class="btn btn-small" href="https://ekart-dist.vercel.app/" target="_blank" rel="noopener">Live</a>
-                <a class="btn btn-ghost btn-small" href="https://github.com/hiba-ct/E-Cart" target="_blank" rel="noopener">Repo</a>
+              <h3>
+                Weather App
+              </h3>
+
+              <p>
+                Weather lookup application with
+                responsive interface.
+              </p>
+
+              <div class="project-tags">
+
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+
               </div>
+
+              <div class="project-buttons">
+
+                <a
+                  href="https://hiba-ct.github.io/whether"
+                  target="_blank"
+                  rel="noopener"
+                  class="small-btn"
+                >
+                  Live Demo
+                </a>
+
+                <a
+                  href="https://github.com/hiba-ct/whether"
+                  target="_blank"
+                  rel="noopener"
+                  class="small-btn outline"
+                >
+                  GitHub
+                </a>
+
+              </div>
+
             </div>
+
           </article>
 
 
 
+          <!-- Media Player -->
 
-          <article class="card project">
-            <div class="card-media">
-              <img src="./images/chatapp1.png" alt="Weather app screenshot" loading="lazy">
+          <article
+            class="project-card reveal"
+            data-category="react"
+          >
+
+            <div class="project-image">
+
+              <img
+                src="./images/media1.png"
+                alt="Media Player"
+                loading="lazy"
+              >
+
             </div>
-            <div class="card-body">
-              <h3>Chat App (MERN)</h3>
-              <p>Real-time chat app concept with MERN stack.</p>
-              <ul class="tags">
-                <li>MERN</li>
-              </ul>
-              <div class="card-actions">
-                <a class="btn btn-small" href="https://chatappfrontend-omega.vercel.app/" target="_blank" rel="noopener">Live</a>
-                <a class="btn btn-ghost btn-small" href="https://bitbucket.org/mernhiba/chatappfrontend/src/main/" target="_blank" rel="noopener">Repo</a>
+
+            <div class="project-body">
+
+              <span class="project-number">
+                09
+              </span>
+
+              <h3>
+                Media Player
+              </h3>
+
+              <p>
+                React media controls demonstration
+                using JSON data.
+              </p>
+
+              <div class="project-tags">
+
+                <span>React</span>
+                <span>JSON</span>
+
               </div>
+
+              <div class="project-buttons">
+
+                <a
+                  href="https://media-frontend-puce.vercel.app/"
+                  target="_blank"
+                  rel="noopener"
+                  class="small-btn"
+                >
+                  Live Demo
+                </a>
+
+                <a
+                  href="https://github.com/hiba-ct/media-frontend"
+                  target="_blank"
+                  rel="noopener"
+                  class="small-btn outline"
+                >
+                  GitHub
+                </a>
+
+              </div>
+
             </div>
+
           </article>
 
 
 
-           <article class="card project">
-            <div class="card-media">
-              <img src="./images/registerform.png" alt="Weather app screenshot" loading="lazy">
+          <!-- Color Changer -->
+
+          <article
+            class="project-card reveal"
+            data-category="javascript"
+          >
+
+            <div class="project-image">
+
+              <img
+                src="./images/colorchanger1.png"
+                alt="Color Changer"
+                loading="lazy"
+              >
+
             </div>
-            <div class="card-body">
-              <h3>Register Form</h3>
-              <p>Registration form for user onboarding.</p>
-              <ul class="tags">
-                <li>React</li><li>JavaScript</li>
-              </ul>
-              <div class="card-actions">
-                <a class="btn btn-small" href="https://register-form-urj1.vercel.app/" target="_blank" rel="noopener">Live</a>
-                <a class="btn btn-ghost btn-small" href="https://github.com/hiba-ct/RegisterForm" target="_blank" rel="noopener">Repo</a>
+
+            <div class="project-body">
+
+              <span class="project-number">
+                10
+              </span>
+
+              <h3>
+                Color Changer
+              </h3>
+
+              <p>
+                Interactive JavaScript color changer
+                application.
+              </p>
+
+              <div class="project-tags">
+
+                <span>JavaScript</span>
+
               </div>
+
+              <div class="project-buttons">
+
+                <a
+                  href="https://colorchangerapp.vercel.app"
+                  target="_blank"
+                  rel="noopener"
+                  class="small-btn"
+                >
+                  Live Demo
+                </a>
+
+                <a
+                  href="https://github.com/hiba-ct/colorchanger"
+                  target="_blank"
+                  rel="noopener"
+                  class="small-btn outline"
+                >
+                  GitHub
+                </a>
+
+              </div>
+
             </div>
+
           </article>
+
+
+
+          <!-- Chat App -->
+
+          <article
+            class="project-card reveal"
+            data-category="mern"
+          >
+
+            <div class="project-image">
+
+              <img
+                src="./images/chatapp1.png"
+                alt="Chat App"
+                loading="lazy"
+              >
+
+            </div>
+
+            <div class="project-body">
+
+              <span class="project-number">
+                11
+              </span>
+
+              <h3>
+                Chat App
+              </h3>
+
+              <p>
+                MERN-based chat application concept.
+              </p>
+
+              <div class="project-tags">
+
+                <span>MERN</span>
+
+              </div>
+
+              <div class="project-buttons">
+
+                <a
+                  href="https://chatappfrontend-omega.vercel.app/"
+                  target="_blank"
+                  rel="noopener"
+                  class="small-btn"
+                >
+                  Live Demo
+                </a>
+
+                <a
+                  href="https://bitbucket.org/mernhiba/chatappfrontend/src/main/"
+                  target="_blank"
+                  rel="noopener"
+                  class="small-btn outline"
+                >
+                  Repository
+                </a>
+
+              </div>
+
+            </div>
+
+          </article>
+
+
+
+          <!-- Register Form -->
+
+          <article
+            class="project-card reveal"
+            data-category="react"
+          >
+
+            <div class="project-image">
+
+              <img
+                src="./images/registerform.png"
+                alt="Register Form"
+                loading="lazy"
+              >
+
+            </div>
+
+            <div class="project-body">
+
+              <span class="project-number">
+                12
+              </span>
+
+              <h3>
+                Register Form
+              </h3>
+
+              <p>
+                Responsive registration form for
+                user onboarding.
+              </p>
+
+              <div class="project-tags">
+
+                <span>React</span>
+                <span>JavaScript</span>
+
+              </div>
+
+              <div class="project-buttons">
+
+                <a
+                  href="https://register-form-urj1.vercel.app/"
+                  target="_blank"
+                  rel="noopener"
+                  class="small-btn"
+                >
+                  Live Demo
+                </a>
+
+                <a
+                  href="https://github.com/hiba-ct/RegisterForm"
+                  target="_blank"
+                  rel="noopener"
+                  class="small-btn outline"
+                >
+                  GitHub
+                </a>
+
+              </div>
+
+            </div>
+
+          </article>
+
+
         </div>
+
       </div>
+
     </section>
 
 
-    
-    <!-- Experience -->
+
+    <!-- ================= EXPERIENCE ================= -->
+
     <section id="experience" class="section">
+
       <div class="container">
-        <h2>Experience</h2>
+
+        <div class="section-heading reveal">
+
+          <span>MY JOURNEY</span>
+
+          <h2>
+            Professional
+            <span>Experience</span>
+          </h2>
+
+        </div>
+
+
         <div class="timeline">
-          <article class="timeline-item">
-            <h3>Frontend React Developer (WFH) — Codinoz Technology, Manjeri</h3>
-            <p class="meta">Ongoing</p>
+
+
+          <article class="timeline-item reveal">
+
+            <div class="timeline-dot"></div>
+
+            <span class="timeline-date">
+              Apr 2025 – Apr 2026
+            </span>
+
+            <h3>
+              Frontend React Developer
+            </h3>
+
+            <h4>
+              Codinoz Technology, Manjeri
+            </h4>
+
             <ul>
-              <li>Build and maintain responsive React components and pages.</li>
-              <li>Collaborate on API integration, state management, and performance.</li>
-              <li>Follow Git-based workflows and code reviews.</li>
+
+              <li>
+                Developed responsive React.js interfaces
+                and reusable components.
+              </li>
+
+              <li>
+                Integrated REST APIs and worked with
+                JavaScript, Bootstrap/CSS and Git.
+              </li>
+
+              <li>
+                Collaborated on UI implementation,
+                debugging and responsive design.
+              </li>
+
             </ul>
+
           </article>
+
+
+
+          <article class="timeline-item reveal">
+
+            <div class="timeline-dot"></div>
+
+            <span class="timeline-date">
+              Ongoing – Ends Nov 2026
+            </span>
+
+            <h3>
+              ReactJS / Full Stack Development Intern
+            </h3>
+
+            <h4>
+              Alprotechlab, Kottakkal
+            </h4>
+
+            <ul>
+
+              <li>
+                Working on ReactJS-based web
+                application development.
+              </li>
+
+              <li>
+                Working with responsive UI and
+                API integration.
+              </li>
+
+              <li>
+                Applying MERN/full-stack concepts
+                through practical projects.
+              </li>
+
+            </ul>
+
+          </article>
+
+
         </div>
+
       </div>
+
     </section>
 
-    <!-- Education -->
-    <section id="education" class="section alt">
+
+
+    <!-- ================= EDUCATION ================= -->
+
+    <section id="education" class="section">
+
       <div class="container">
-        <h2>Education</h2>
-        <div class="cards">
-          <article class="card">
-            <div class="card-body">
-              <h3>Full Stack Development — Luminar Technolab, Kochi</h3>
-              <p class="meta">2024–2025</p>
-            </div>
-          </article>
-          <article class="card">
-            <div class="card-body">
-              <h3>B.Sc. Computer Science — University of Calicut</h3>
-              <p class="meta">2019–2022</p>
-            </div>
-          </article>
+
+        <div class="section-heading reveal">
+
+          <span>EDUCATION</span>
+
+          <h2>
+            My Academic
+            <span>Background</span>
+          </h2>
+
         </div>
+
+
+        <div class="education-grid">
+
+
+          <div class="education-card reveal">
+
+            <div class="education-icon">
+
+              <i class="fa-solid fa-graduation-cap"></i>
+
+            </div>
+
+            <div>
+
+              <h3>
+                B.Sc. Computer Science
+              </h3>
+
+              <p>
+                University of Calicut
+              </p>
+
+              <span>
+                2019 – 2022
+              </span>
+
+            </div>
+
+          </div>
+
+
+          <div class="education-card reveal">
+
+            <div class="education-icon">
+
+              <i class="fa-solid fa-code"></i>
+
+            </div>
+
+            <div>
+
+              <h3>
+                Full Stack Development
+              </h3>
+
+              <p>
+                Luminar Technolab, Kochi
+              </p>
+
+              <span>
+                2024 – 2025
+              </span>
+
+            </div>
+
+          </div>
+
+
+        </div>
+
       </div>
+
     </section>
 
-    <!-- Certifications -->
+
+
+    <!-- ================= CERTIFICATIONS ================= -->
+
     <section id="certifications" class="section">
+
       <div class="container">
-        <h2>Certifications & Learning</h2>
-        <ul class="cert-list">
-          <li>MERN Stack Development Certification</li>
-          <li>Yuva AI Program</li>
-          <li>FutureSkills Prime Courses</li>
-          <li>Generative AI Fundamentals</li>
-          <li>Prompt Engineering Fundamentals</li>
-          <li>OpenAI Fundamentals (Self Learning)</li>
-          <li>Gemini AI Fundamentals</li>
-        </ul>
+
+        <div class="section-heading reveal">
+
+          <span>LEARNING</span>
+
+          <h2>
+            Certifications &
+            <span>Skills</span>
+          </h2>
+
+        </div>
+
+
+        <div class="cert-grid">
+
+
+          <div class="cert-card reveal">
+
+            <i class="fa-solid fa-certificate"></i>
+
+            <h3>
+              MERN Stack Development
+            </h3>
+
+            <p>
+              Full Stack Development
+            </p>
+
+          </div>
+
+
+          <div class="cert-card reveal">
+
+            <i class="fa-solid fa-robot"></i>
+
+            <h3>
+              Generative AI
+            </h3>
+
+            <p>
+              AI and Prompt Engineering
+            </p>
+
+          </div>
+
+
+          <div class="cert-card reveal">
+
+            <i class="fa-solid fa-brain"></i>
+
+            <h3>
+              Yuva AI Program
+            </h3>
+
+            <p>
+              FutureSkills Prime
+            </p>
+
+          </div>
+
+
+          <div class="cert-card reveal">
+
+            <i class="fa-solid fa-wand-magic-sparkles"></i>
+
+            <h3>
+              Prompt Engineering
+            </h3>
+
+            <p>
+              AI-assisted development
+            </p>
+
+          </div>
+
+
+        </div>
+
       </div>
+
     </section>
 
-    <!-- Contact -->
-    <section id="contact" class="section alt">
+
+
+    <!-- ================= CONTACT ================= -->
+
+    <section id="contact" class="section contact-section">
+
       <div class="container">
-        <h2>Contact</h2>
-        <div class="contact-grid">
-          <div class="contact-card">
-            <h3>Call</h3>
-            <a href="tel:+918075689279">807-568-9279</a>
+
+        <div class="contact-box reveal">
+
+          <div class="contact-text">
+
+            <span>
+              GET IN TOUCH
+            </span>
+
+            <h2>
+              Let's build something
+              <span>together.</span>
+            </h2>
+
+            <p>
+              I'm open to ReactJS, Frontend and
+              Full Stack development opportunities.
+            </p>
+
           </div>
-          <div class="contact-card">
-            <h3>Email</h3>
-            <a href="mailto:semeenahiba@gmail.com">semeenahiba@gmail.com</a>
+
+
+          <div class="contact-details">
+
+
+            <a
+              href="mailto:semeenahiba@gmail.com"
+              class="contact-item"
+            >
+
+              <i class="fa-solid fa-envelope"></i>
+
+              <div>
+
+                <small>Email</small>
+
+                <strong>
+                  semeenahiba@gmail.com
+                </strong>
+
+              </div>
+
+            </a>
+
+
+            <a
+              href="https://api.whatsapp.com/send?phone=918075689279"
+              class="contact-item"
+            >
+
+          <i class="fa-brands fa-whatsapp"></i>
+
+              <div>
+
+                <small>WhatsApp</small>
+
+                <strong>
+                  807-568-9279
+                </strong>
+
+              </div>
+
+            </a>
+
+
+            <a
+              href="www.linkedin.com/in/hibact"
+              target="_blank"
+              rel="noopener"
+              class="contact-item"
+            >
+
+              <i class="fa-brands fa-linkedin"></i>
+
+              <div>
+
+                <small>LinkedIn</small>
+
+                <strong>
+                  linkedin.com/in/hibact
+                </strong>
+
+              </div>
+
+            </a>
+
+
+            <a
+              href="https://github.com/hiba-ct"
+              target="_blank"
+              rel="noopener"
+              class="contact-item"
+            >
+
+              <i class="fa-brands fa-github"></i>
+
+              <div>
+
+                <small>GitHub</small>
+
+                <strong>
+                  github.com/hiba-ct
+                </strong>
+
+              </div>
+
+            </a>
+
+
           </div>
-          <div class="contact-card">
-            <h3>Location</h3>
-            <p>Pandikkad, Malappuram, Kerala, India</p>
-          </div>
-          <div class="contact-card">
-            <h3>Links</h3>
-            <ul class="inline-links">
-              <li><a href="https://www.linkedin.com/in/hibact" target="_blank" rel="noopener">LinkedIn</a></li>
-              <li><a href="https://github.com/hiba-ct" target="_blank" rel="noopener">GitHub</a></li>
-              <li><a href="https://my-portfolio-alpha-lyart-12.vercel.app/" target="_blank" rel="noopener">Portfolio</a></li>
-            </ul>
-          </div>
+
         </div>
+
       </div>
+
     </section>
+
+
   </main>
 
-  <!-- Footer -->
+
+
+  <!-- ================= FOOTER ================= -->
+
   <footer class="footer">
-    <div class="container footer-grid">
-      <p>© <span id="year"></span> Hiba. All Rights Reserved.</p>
-      <nav id="link" aria-label="Footer">
+
+    <div class="container footer-content">
+
+      <p>
+        © <span id="year"></span>
+        Semeena Hiba C. All Rights Reserved.
+      </p>
+
+      <div class="footer-links">
+
         <a href="#home">Home</a>
+
         <a href="#skills">Skills</a>
+
         <a href="#projects">Projects</a>
+
         <a href="#contact">Contact</a>
-      </nav>
+
+      </div>
+
     </div>
+
   </footer>
 
+
+
+  <!-- ================= BACK TO TOP ================= -->
+
+  <button
+    id="backToTop"
+    class="back-to-top"
+    aria-label="Back to top"
+  >
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+
+
+  <!-- ================= JAVASCRIPT ================= -->
+
   <script>
-    // Mobile nav toggle
-    const toggle = document.querySelector('.nav-toggle');
-    const menu = document.getElementById('navMenu');
-    toggle.addEventListener('click', () => {
-      const open = toggle.getAttribute('aria-expanded') === 'true';
-      toggle.setAttribute('aria-expanded', String(!open));
-      menu.classList.toggle('open');
+
+    /* ========================================
+       MOBILE NAVIGATION
+    ======================================== */
+
+    const navToggle =
+      document.getElementById("navToggle");
+
+    const navMenu =
+      document.getElementById("navMenu");
+
+    navToggle.addEventListener("click", () => {
+
+      const isOpen =
+        navToggle.getAttribute("aria-expanded") === "true";
+
+      navToggle.setAttribute(
+        "aria-expanded",
+        String(!isOpen)
+      );
+
+      navMenu.classList.toggle("open");
+
     });
-    // Current year
-    document.getElementById('year').textContent = new Date().getFullYear();
+
+
+    /* Close mobile menu */
+
+    document
+      .querySelectorAll(".nav-link")
+      .forEach(link => {
+
+        link.addEventListener("click", () => {
+
+          navMenu.classList.remove("open");
+
+          navToggle.setAttribute(
+            "aria-expanded",
+            "false"
+          );
+
+        });
+
+      });
+
+
+
+    /* ========================================
+       TYPING EFFECT
+    ======================================== */
+
+    const typingText =
+      document.getElementById("typing-text");
+
+    const roles = [
+
+      "ReactJS Frontend Developer",
+
+      "MERN Stack Developer",
+
+      "Full Stack Developer",
+
+      "AI-Assisted Developer"
+
+    ];
+
+    let roleIndex = 0;
+
+    let charIndex = 0;
+
+    let deleting = false;
+
+
+    function typeEffect() {
+
+      const currentRole =
+        roles[roleIndex];
+
+
+      if (!deleting) {
+
+        typingText.textContent =
+          currentRole.substring(
+            0,
+            charIndex + 1
+          );
+
+        charIndex++;
+
+
+        if (
+          charIndex ===
+          currentRole.length
+        ) {
+
+          deleting = true;
+
+          setTimeout(
+            typeEffect,
+            1500
+          );
+
+          return;
+
+        }
+
+      } else {
+
+        typingText.textContent =
+          currentRole.substring(
+            0,
+            charIndex - 1
+          );
+
+        charIndex--;
+
+
+        if (charIndex === 0) {
+
+          deleting = false;
+
+          roleIndex =
+            (roleIndex + 1) %
+            roles.length;
+
+        }
+
+      }
+
+
+      setTimeout(
+        typeEffect,
+        deleting ? 50 : 100
+      );
+
+    }
+
+
+    typeEffect();
+
+
+
+    /* ========================================
+       SCROLL REVEAL
+    ======================================== */
+
+    const revealElements =
+      document.querySelectorAll(
+        ".reveal"
+      );
+
+
+    const revealObserver =
+      new IntersectionObserver(
+
+        entries => {
+
+          entries.forEach(entry => {
+
+            if (
+              entry.isIntersecting
+            ) {
+
+              entry.target.classList.add(
+                "show"
+              );
+
+              revealObserver.unobserve(
+                entry.target
+              );
+
+            }
+
+          });
+
+        },
+
+        {
+          threshold: 0.12
+        }
+
+      );
+
+
+    revealElements.forEach(
+      element => {
+
+        revealObserver.observe(
+          element
+        );
+
+      }
+    );
+
+
+
+    /* ========================================
+       ACTIVE NAVIGATION
+    ======================================== */
+
+    const sections =
+      document.querySelectorAll(
+        "section[id]"
+      );
+
+
+    const navLinks =
+      document.querySelectorAll(
+        ".nav-link"
+      );
+
+
+    function updateActiveNav() {
+
+      let currentSection =
+        "home";
+
+
+      sections.forEach(section => {
+
+        const sectionTop =
+          section.offsetTop - 180;
+
+        const sectionBottom =
+          sectionTop +
+          section.offsetHeight;
+
+
+        if (
+          window.scrollY >= sectionTop &&
+          window.scrollY < sectionBottom
+        ) {
+
+          currentSection =
+            section.id;
+
+        }
+
+      });
+
+
+      navLinks.forEach(link => {
+
+        link.classList.remove(
+          "active"
+        );
+
+
+        if (
+          link.getAttribute("href") ===
+          "#" + currentSection
+        ) {
+
+          link.classList.add(
+            "active"
+          );
+
+        }
+
+      });
+
+    }
+
+
+    window.addEventListener(
+      "scroll",
+      updateActiveNav
+    );
+
+
+    updateActiveNav();
+
+
+
+    /* ========================================
+       BACK TO TOP
+    ======================================== */
+
+    const backToTop =
+      document.getElementById(
+        "backToTop"
+      );
+
+
+    window.addEventListener(
+      "scroll",
+      () => {
+
+        if (
+          window.scrollY > 500
+        ) {
+
+          backToTop.classList.add(
+            "show"
+          );
+
+        } else {
+
+          backToTop.classList.remove(
+            "show"
+          );
+
+        }
+
+      }
+    );
+
+
+    backToTop.addEventListener(
+      "click",
+      () => {
+
+        window.scrollTo({
+
+          top: 0,
+
+          behavior: "smooth"
+
+        });
+
+      }
+    );
+
+
+
+    /* ========================================
+       PROJECT FILTER
+    ======================================== */
+
+    const filterButtons =
+      document.querySelectorAll(
+        ".filter-btn"
+      );
+
+
+    const projectCards =
+      document.querySelectorAll(
+        ".project-card"
+      );
+
+
+    filterButtons.forEach(button => {
+
+      button.addEventListener(
+        "click",
+        () => {
+
+          filterButtons.forEach(btn => {
+
+            btn.classList.remove(
+              "active"
+            );
+
+          });
+
+
+          button.classList.add(
+            "active"
+          );
+
+
+          const filter =
+            button.dataset.filter;
+
+
+          projectCards.forEach(card => {
+
+            const categories =
+              card.dataset.category;
+
+
+            if (
+              filter === "all" ||
+              categories.includes(filter)
+            ) {
+
+              card.style.display =
+                "block";
+
+
+              setTimeout(() => {
+
+                card.classList.add(
+                  "show-project"
+                );
+
+              }, 10);
+
+            } else {
+
+              card.style.display =
+                "none";
+
+              card.classList.remove(
+                "show-project"
+              );
+
+            }
+
+          });
+
+        }
+      );
+
+    });
+
+
+
+    /* ========================================
+       COUNTER ANIMATION
+    ======================================== */
+
+    const counters =
+      document.querySelectorAll(
+        ".counter"
+      );
+
+
+    const counterObserver =
+      new IntersectionObserver(
+
+        entries => {
+
+          entries.forEach(entry => {
+
+            if (
+              entry.isIntersecting
+            ) {
+
+              const counter =
+                entry.target;
+
+              const target =
+                Number(
+                  counter.dataset.target
+                );
+
+              let current = 0;
+
+              const increment =
+                Math.max(
+                  1,
+                  Math.ceil(
+                    target / 30
+                  )
+                );
+
+
+              const updateCounter =
+                () => {
+
+                  current +=
+                    increment;
+
+
+                  if (
+                    current >= target
+                  ) {
+
+                    counter.textContent =
+                      target + "+";
+
+                    return;
+
+                  }
+
+
+                  counter.textContent =
+                    current;
+
+
+                  requestAnimationFrame(
+                    updateCounter
+                  );
+
+                };
+
+
+              updateCounter();
+
+              counterObserver.unobserve(
+                counter
+              );
+
+            }
+
+          });
+
+        },
+
+        {
+          threshold: 0.5
+        }
+
+      );
+
+
+    counters.forEach(counter => {
+
+      counterObserver.observe(
+        counter
+      );
+
+    });
+
+
+
+    /* ========================================
+       DARK / LIGHT MODE
+    ======================================== */
+
+    const themeBtn =
+      document.getElementById(
+        "themeBtn"
+      );
+
+
+    const savedTheme =
+      localStorage.getItem(
+        "portfolio-theme"
+      );
+
+
+    if (
+      savedTheme === "dark"
+    ) {
+
+      document.body.classList.add(
+        "dark"
+      );
+
+      themeBtn.innerHTML =
+        '<i class="fa-solid fa-sun"></i>';
+
+    }
+
+
+    themeBtn.addEventListener(
+      "click",
+      () => {
+
+        document.body.classList.toggle(
+          "dark"
+        );
+
+
+        const isDark =
+          document.body.classList.contains(
+            "dark"
+          );
+
+
+        localStorage.setItem(
+          "portfolio-theme",
+          isDark
+            ? "dark"
+            : "light"
+        );
+
+
+        themeBtn.innerHTML =
+          isDark
+            ? '<i class="fa-solid fa-sun"></i>'
+            : '<i class="fa-solid fa-moon"></i>';
+
+      }
+    );
+
+
+
+    /* ========================================
+       YEAR
+    ======================================== */
+
+    document.getElementById(
+      "year"
+    ).textContent =
+      new Date().getFullYear();
+
+
   </script>
+
+
 </body>
+
 </html>
